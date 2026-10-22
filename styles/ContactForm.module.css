@@ -1,0 +1,57 @@
+/* Contact form field styles. */
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--field-border);
+  background: var(--field-bg);
+  color: var(--foreground);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field::placeholder {
+  color: #a1a1aa;
+}
+
+.field:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+}
+
+.fieldError {
+  border-color: #f43f5e;
+}
+
+.fieldError:focus {
+  border-color: #f43f5e;
+  box-shadow: 0 0 0 4px rgba(244, 63, 94, 0.16);
+}
+
+.textarea {
+  min-height: 9.5rem;
+  resize: vertical;
+}
+
+.error {
+  margin-top: 0.35rem;
+  font-size: 0.825rem;
+  color: #e11d48;
+}
+
+@media (prefers-color-scheme: dark) {
+  .error {
+    color: #fb7185;
+  }
+}
